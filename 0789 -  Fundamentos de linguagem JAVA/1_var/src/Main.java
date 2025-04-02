@@ -126,8 +126,27 @@ public class Main {
         System.out.println(i / 3);
         System.out.println(i / 3.0);
 
-        
 
+
+        System.out.println("--------------- inc --------------");
+
+        i = i + 1;
+        i += 1;
+        i++;
+
+
+        i = i - 1;
+        i -= 1;
+        i--;
+
+
+
+        i = i * 5;
+        i *= 5;
+
+
+        i = i / 5;
+        i /= 5;
 
 
     }
