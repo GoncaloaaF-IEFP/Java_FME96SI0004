@@ -73,6 +73,50 @@ public class Main {
 
         }
 
+        System.out.println("------------ separador -----------------");
+
+        int mes = 11;
+
+        switch (mes){
+            case 1:
+                System.out.println("Janeiro");
+
+            case 2:
+                System.out.println("Fevereiro");
+                break;
+
+            case 3:
+                System.out.println("Março");
+                break;
+
+            default:
+                System.out.println("Mês invalido");
+        }
+
+
+        int mes2 = 10;
+        int ano = 2020;
+
+        if (mes2 == 12){
+
+        } else if (ano > 2020) {
+
+        } else if (idade == 30) {
+
+        }
+
+        System.out.println("------------ separador -----------------");
+
+        mes2 = 12;
+        ano = 2020;
+        idade = 20;
+
+        if ((mes2 == 12 && ano == 2021) || idade == 20 ) {
+            System.out.println("ok");
+        }else{
+            System.out.println("nao ok");
+
+        }
 
     }
 }
