@@ -140,13 +140,26 @@ Faça um programa que calcule e escreva o número de anos necessários para que
 
          */
 
+/*
+Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10.
+A saída deve ser conforme o exemplo abaixo:
 
+Tabuada de 5:
+5 X 1 = 5
+5 X 2 = 10
+...
+5 X 10 = 50
+
+ */
         /*
 
 
         faça um contador de 0 a 100
 
         faça um contador de 100 a 0
+
+
+        mostre os num pares de 0 a 100
 
 
          */
