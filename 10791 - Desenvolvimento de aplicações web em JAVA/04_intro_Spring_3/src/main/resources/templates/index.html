@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <section>
+        <h1>Home Page</h1>
+        <h2>Pagina do <span th:text="${nome}" /> th 2</h2>
+    </section>
+
+    <nav>
+        <a th:href="@{/}">Home</a> |
+        <a th:href="@{/pag2}">Pagina 2</a>
+    </nav>
+</header>
+<div th:id="container"  th:name="container">
+
+    conteúdo da home page
+
+</div>
+</body>
+</html>
