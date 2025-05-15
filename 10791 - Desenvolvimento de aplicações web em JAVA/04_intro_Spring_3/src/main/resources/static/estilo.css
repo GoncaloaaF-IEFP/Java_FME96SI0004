@@ -1,0 +1,28 @@
+header{
+    padding: 100px;
+    color: white;
+    background-color: black;
+
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+header > nav > a:visited {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+a{
+
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
+.img{
+    height: 200px;
+    width: 200px;
+}

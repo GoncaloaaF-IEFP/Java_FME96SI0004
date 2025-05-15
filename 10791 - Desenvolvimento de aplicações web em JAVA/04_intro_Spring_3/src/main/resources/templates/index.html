@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/estilo.css">
     <title>Title</title>
 </head>
 <body>
@@ -18,7 +19,9 @@
 </header>
 <div th:id="container"  th:name="container">
 
-    conteúdo da home page
+    <p>conteúdo da home page</p>
+
+    <img th:class="img" th:src="@{/foto1.jpg}"  alt="foto1"/>
 
 </div>
 </body>
