@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<header>
+  <h1> a Minha 1ª página </h1>
+  <nav style="padding-bottom: 50px">
+    <a th:href="@{/infos}">infos </a> | 
+    <a th:href="@{/}">homepage </a>
+
+  </nav>
+
+</header>
+
+<main>
+  <div layout:fragment="content"></div>
+</main>
+
+<footer>
+
+  <h1>Footer da pagina</h1>
+  <h2>©Gonçalo Feliciano</h2>
+</footer>
+
+</body>
+</html>
