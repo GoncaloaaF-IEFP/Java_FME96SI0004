@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<div layout:fragment="content">
+
+
+    <h2 th:if="${dia == 'd'}"> Bom Dia </h2>
+    <h2 th:if="${dia == 't'}"> Boa Tarde </h2>
+    <h2 th:if="${dia == 'n'}"> Bom Noite </h2>
+
+
+
+</div>
+
+</html>

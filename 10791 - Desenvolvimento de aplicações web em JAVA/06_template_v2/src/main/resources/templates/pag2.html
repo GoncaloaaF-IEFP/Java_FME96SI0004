@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<div layout:fragment="content">
+
+
+
+    <form role="form" th:action="@{/addAluno}"  method="post"  th:object="${aluno}">
+        <label for="nome">nome</label>
+        <input type="text" id="nome" name="nome"  th:field="*{nome}"/>
+        <br />
+        <label for="email">email</label>
+        <input type="text" id="email" name="email"  th:field="*{email}"/>
+
+        <br>
+        <button type="submit">Registar</button>
+
+    </form>
+
+
+</div>
+
+</html>

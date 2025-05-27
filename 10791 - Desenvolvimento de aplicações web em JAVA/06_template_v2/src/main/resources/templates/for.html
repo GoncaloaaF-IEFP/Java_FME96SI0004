@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<div layout:fragment="content">
+
+
+
+  -------ol (th:each) > li  ----------
+
+  <ul th:each="nome : ${nomes}">
+    <li th:text="${nome}"> </li>
+  </ul>
+
+  -------ol > li (th:each) ----------
+
+  <ol>
+    <li th:each="nome : ${nomes}" th:text="${nome}"> </li>
+  </ol>
+  -------- div ---------
+  <div th:each="nome : ${nomes}" th:text="${nome}"> </div>
+
+</div>
+
+</html>
