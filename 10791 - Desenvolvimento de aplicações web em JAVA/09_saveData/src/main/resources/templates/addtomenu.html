@@ -1,0 +1,53 @@
+
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+
+<main class="flex-shrink-0" layout:fragment="conteudo">
+
+    <section>
+        <div class="container px-5 my-5">
+            <h1> Add new food </h1>
+
+            <form role="form" method="post" class="form" th:action="@{/add}" th:object="${food}">
+
+                <div class="form-grpup">
+                    <input
+                            type="text"
+                            class="form-control"
+                            placeholder="nome"
+                            th:field="*{name}">
+
+                </div>
+                <div class="form-grpup">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="URL"
+                           th:field="*{imageURL}"
+                    >
+                </div>
+
+                <div class="input-group mb-3 w-25">
+                    <input type="text"
+                           class="form-control"
+                           aria-label="Amount (to the nearest dollar)"
+                           th:field="*{price}"
+                    >
+                    <span class="input-group-text">€</span>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+
+        </div>
+
+
+    </section>
+</main>
+
+
+</html>

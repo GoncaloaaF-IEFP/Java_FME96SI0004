@@ -1,0 +1,34 @@
+
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout ="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}" >
+
+<main class="flex-shrink-0" layout:fragment="conteudo">
+
+    <section class="py-5">
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h1 class="fw-bolder">O nosso Menu</h1>
+            </div>
+
+
+            <div class="row gx-5">
+                <div th:each="food: ${foods}"  class="col-lg-4">
+
+                    <div class="position-relative">
+                        <a class="h3 fw-bolder text-decoration-none link-dark stretched-link"
+                           th:text="${food.getName()}"
+                           th:href="@{|food/${food.id}|}"
+                        ></a>
+                        <img class="img-fluid rounded-3 mb-3" th:src="${food.getImageURL()}" alt="..." />
+                        <p class="text-bg-info" th:text="${food.getPrice()} +'€' "></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</main>

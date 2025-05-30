@@ -1,0 +1,27 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout ="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}" >
+
+
+<main class="container" layout:fragment="conteudo">
+
+    <div  class="col-lg-4">
+
+        <div class="position-relative">
+            <div class="h3 fw-bolder text-decoration-none link-dark stretched-link"
+                 th:text="${food.getName()}"
+            ></div>
+            <img class="img-fluid rounded-3 mb-3" th:src="${food.getImageURL()}" alt="..." />
+            <p class="text-center" th:text="${food.getPrice()} + '€'"></p>
+        </div>
+    </div>
+
+    <a class="btn btn-success" th:href="@{|${food.id}/edit|}"> Editar </a>
+    <a class="btn btn-danger" href="#"> Remover </a>
+
+</main>
+
+
+
+</html>
