@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import pt.iefp.template_v2.modelo.Aluno;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 @Controller
 public class HomeController {
